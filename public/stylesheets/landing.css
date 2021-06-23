@@ -1,0 +1,124 @@
+body{
+	background: black;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+#landing-header h1{
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.slideshow{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slideshow li{
+	width: 100%;
+	height: 100%;
+	position: absolute;;
+	top: 0;
+	bottom: 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 0;
+	animation: imageAnimation 100s linear infinite;
+}
+
+.slideshow li:nth-child(1){
+	background-image: url(https://image.redbull.com/rbcom/052/2018-08-01/02628b68-354a-464f-84e9-75e03454db04/0012/0/5/0/4392/6581/1500/1/lake-district-tent.jpg);
+}
+
+.slideshow li:nth-child(2){
+	background-image: url(https://s3.amazonaws.com/seekadventure.net.storage/2019-07-11/1562805889-279019-mcj07682-2.jpeg);
+	animation-delay: 10s;
+}
+
+.slideshow li:nth-child(3){
+	background-image: url(https://www.exploresquamish.com/files/dmo_events/lead/scott-goodwill-359336-unsplash.jpg);
+	animation-delay: 20s;
+}
+
+.slideshow li:nth-child(4){
+	background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2015/06/Arches-National-Park-Utah-0.jpg);
+	animation-delay: 30s;
+}
+
+.slideshow li:nth-child(5){
+	background-image: url("https://www.tripsavvy.com/thmb/mZ5DTHA9EesV7njbC38Atfh4hrE=/1500x1000/filters:fill(auto,1)/arkansas-camping-597904aed088c0001061ac58.jpg");
+	animation-delay: 40s;
+}
+
+.slideshow li:nth-child(6){
+	background-image: url(https://media.blogto.com/articles/2017725-lake-superior.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70);
+	animation-delay: 50s;
+}
+
+.slideshow li:nth-child(7){
+	background-image: url(https://handluggageonly.co.uk/wp-content/uploads/2017/05/Hand-Luggage-Only-21-1.jpg);
+	animation-delay: 60s;
+}
+
+.slideshow li:nth-child(8){
+	background-image: url(https://cdn.hiconsumption.com/wp-content/uploads/2015/06/Best-Places-To-Camp-In-The-US-0-Hero.jpg);
+	animation-delay: 70s;
+}
+
+.slideshow li:nth-child(9){
+	background-image: url(https://www.dhresource.com/0x0s/f2-albu-g6-M01-23-8F-rBVaSFu9uuKASo3LAAKcAHicnlk483.jpg/canada-bow-lake-beautiful-nature-scenic-living.jpg);
+	animation-delay: 80s;
+}
+
+.slideshow li:nth-child(10){
+	background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1487975567%2Fcalifornia-julia-pfeiffer-burns-state-park-50CAMP0217.jpg%3Fitok%3D8S8b2C0W&q=85);
+	animation-delay: 90s;
+}
+
+@keyframes imageAnimation{
+	0%{
+		opacity: 0;
+		animation-timing-function: ease-in;
+	}
+
+	5%{
+		opacity: 1;
+		animation-timing-function: ease-out;
+	}
+
+	10%{
+		opacity: 1;
+	}
+
+	15%{
+		opacity: 0;
+	}
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+.navbar{
+	z-index: 1;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
